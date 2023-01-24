@@ -4,18 +4,27 @@ body {
     display: block;
     width: 100%;
     margin: 0;
+    font-family: Open Sans;
 }
 
 .primary-button {
-    @include values.primary-button;
+    @include values.button;
     font-size: 20px;
+    font-weight: bold;
+    height: 48px;
+    display: flex;
     margin: 16px 0;
-    
+    box-shadow: 0 0 20px -10px black;
+}
+.simple-button {
+    @include values.button;
+    height: 32px;
+    display: inline-flex; 
 }
 header {
     width: 100%;
     height: 0;
-    position: relative;
+    position: relative;    
     
     .container{
         background-color: rgb(247, 247, 247);
@@ -23,6 +32,7 @@ header {
         display: flex;
         height: 60px;
         flex-direction: row;
+        align-items: center;
         box-sizing: border-box;
         width: 100%;
         padding: 0 16px;
@@ -49,23 +59,22 @@ header {
     }
 }
 .card {
-    height: 100vh;
+    height: auto;
+    overflow: auto;
     background-color: white;
     overflow: auto;
-    border-bottom: 1px dashed grey;
-    display: flex;
 
     .container{
         flex: 1;
         display: flex;
-        overflow-y: auto;
-        display: flex;
         flex-direction: column;
-        margin: 16px;
         border-radius: 24px;
         justify-content: center;
         align-items: center;
         padding: 10%;
+        height: 100vh;
+        box-sizing: border-box;
+        border-bottom: 1px dashed grey;
 
         #home {
             text-align: center;
@@ -73,6 +82,8 @@ header {
          
         .inner-container{
             display: flex;
+            margin: 16px;
+            gap: 32px;
             h1 {
                 font-size: 45px;
             }
@@ -92,5 +103,39 @@ header {
                 margin-top: 4px;
             }
         }
+    }
+}
+.skill {
+    display: inline-block;
+    margin: 6px 2px;
+    padding: 6px 10px;
+    background: rgba(153,153,153,0.2);
+    color: #777;
+    font-weight: bold;
+    border-radius: 24px;
+    text-transform: uppercase;
+}
+.card_projects{
+    .inner-container{
+        align-items: center;
+    }
+    .left{
+        flex-grow: 0.5!important;
+        .project-description{
+            line-height: 24px;
+        }
+    }
+
+
+    .project-img {
+        overflow: visible;
+        border-radius: values.$project-border-radius;
+        padding: 5px 5px 30px 5px;
+        box-shadow: 0 0 20px -10px;
+        background-color: #0093ff;
+    }
+    img{
+        width: 100%;
+        border-radius: values.$project-border-radius;
     }
 }
