@@ -13,3 +13,8 @@ $project-border-radius: 32px;
     padding: 0 32px;
     cursor: pointer;
 }
+
+$key: random(2);
+
+$list: '#cf8800', '#0093ff', ;
+$random-color: nth($list, $key);

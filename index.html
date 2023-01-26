@@ -11,7 +11,9 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
         <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
@@ -25,9 +27,9 @@
                 <div class="head-title">This is title</div>
                 <div class="head-menu" id="'head-menu">
                     <ul>
-                        <li>About Me</li>
-                        <li>Projects</li>
-                        <li class="simple-button">Say Hello</li>
+                        <a href="#about" style="color:black"><li>About Me</li></a>
+                        <a href="#hello">
+                        <li class="simple-button">Say Hello</li></a>
                     </ul>
                 </div>
             </div>
@@ -43,13 +45,17 @@
                             <div class="description">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems
                             </div>
-                            <div class="project-link primary-button">Projects</div>
+                            <a href="#projects" class="primary-button-wrapper">                                
+                                <div class="project-link primary-button">
+                                    Projects
+                                </div>
+                            </a>
                         </div>
                         <div class="right"></div>
                     </div>
                 </div>
             </div>
-            <div class="card card_about">
+            <div class="card card_about" id="about">
                 <div class="container">
                     <div class="inner-container">
                         <div class="left">
@@ -57,7 +63,9 @@
                             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems
                                 Lorem ipsum dolor sit amet consectetur adipisicing eli>?<br>t. Hic facilis tempora explicabo quae quod des<br>erunt eius sapiente solutions for complex problems
                             </div>
-                            <div class="primary-button contact-button">Say Hello</div>
+                            <div class="primary-button-wrapper">
+                                <div class="primary-button contact-button">Say Hello</div>
+                            </div>
                         </div>
                         <div class="right">
                             <h2>My Skillset</h2>
@@ -78,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card card_projects">
+            <div class="card card_projects" id="projects">
                 <div class="container">
                     <div class="inner-container">
                         <div class="left">
@@ -87,7 +95,9 @@
                                 project that you may like. <br> It also includes the technologies 
                                 involved in the project.
                             </div>
-                            <div class="project-button primary-button">GitHub Link</div>
+                            <div class="primary-button-wrapper">
+                                <div class="project-button primary-button">GitHub Link</div>
+                            </div>
                         </div>
                         <div class="right">
                             <div class="project-img">
@@ -103,10 +113,29 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card_about card_hello" id="hello">
                 <div class="container">
                     <div class="inner-container">
-                        <h1>Hi There! this is Surya.</h1>
+                        <div class="left">
+                            <h2>Say Hello!</h2>
+                            <p> Gotta discuss something with us or just wanna say hello, we're always up for a chat. </p>
+                        </div>
+                        <div class="right">
+                            <div class="share-buttons">
+                                <a href="" class="social-link gmail-link">
+                                    <img src="gmail.png" alt="Gmail">
+                                </a>
+                                <a href="" class="social-link">
+                                    <img src="linkedin.png" alt="linkedin"/>
+                                </a>
+                                <a href="" class="social-link">
+                                    <img src="github.png" alt="GitHub">
+                                </a>
+                                <a href="" class="social-link">
+                                    <img src="twitter.png" alt="Twitter">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
