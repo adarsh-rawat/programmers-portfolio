@@ -1,7 +1,8 @@
 $primary-background: white;
 $theme-color: #fc6103;
 $button-text-color: white;
-$project-border-radius: 32px;
+$project-border-radius: 16px;
+$font-mid: 1rem; 
 
 @mixin button{
     background-color: $theme-color;
@@ -10,7 +11,7 @@ $project-border-radius: 32px;
     width: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 0 32px;
+    padding: 0 16px;
     cursor: pointer;
 }
 

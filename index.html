@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 
         <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
@@ -23,11 +23,15 @@
     <body>
         <header>
             <div class="container">
-                <div class="photo">Pho</div>
-                <div class="head-title">This is title</div>
+                <div class="photo">
+                    <img src="assets/avatar.png" width="32px" alt="avatar">
+                </div>
+                <div class="head-title">
+                        John Doe
+                </div>
                 <div class="head-menu" id="'head-menu">
                     <ul>
-                        <a href="#about" style="color:black"><li>About Me</li></a>
+                        <a href="#about" style="color:black" class="about-link"><li>About Me</li></a>
                         <a href="#hello">
                         <li class="simple-button">Say Hello</li></a>
                     </ul>
@@ -40,7 +44,7 @@
                     <div class="inner-container">
                         <div class="left">
                             <div class="primary-heading">
-                                <h1>Hi There! this is Surya.</h1>
+                                <h1>Hi There!<br>This is John Doe.</h1>
                             </div>
                             <div class="description">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems
@@ -51,7 +55,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="right"></div>
+                        <div class="right">
+                            <div class="image-wrapper">
+                                <img src="assets/avatar2.png" alt="avatar"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,11 +68,20 @@
                     <div class="inner-container">
                         <div class="left">
                             <h2>About Me</h2>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems
-                                Lorem ipsum dolor sit amet consectetur adipisicing eli>?<br>t. Hic facilis tempora explicabo quae quod des<br>erunt eius sapiente solutions for complex problems
+                            <div>
+                                <p>Hey! It's John Doe and I'm a <b>Frontend Web Developer</b> located in Los Angeles. 
+                                I've done remote projects for agencies, 
+                                and collaborated with talented people to create digital products 
+                                for both business and consumer use. </p>
+                                <p>
+                                I'm a bit of a digital product junky. Over the years, 
+                                I've used hundreds of web and mobile apps in different 
+                                industries and verticals. Feel free to contact me here. </p>
                             </div>
                             <div class="primary-button-wrapper">
-                                <div class="primary-button contact-button">Say Hello</div>
+                                <a href="#hello">
+                                    <div class="primary-button contact-button">Say Hello</div>
+                                </a>
                             </div>
                         </div>
                         <div class="right">
@@ -91,9 +108,11 @@
                     <div class="inner-container">
                         <div class="left">
                             <h2 class="project-head">Project 1</h2>
-                            <div class="project-description">This is Some description of the 
-                                project that you may like. <br> It also includes the technologies 
-                                involved in the project.
+                            <div class="project-description">
+                                <p>Here goes the short description of the project and its goals and processes.</p>
+                                <p>We may also include the technologies used in the project here, like: <br>
+                                    technologies- <br> Frontend- HTML/CSS, React.js <br> Backend- Node & Express
+                                </p>
                             </div>
                             <div class="primary-button-wrapper">
                                 <div class="project-button primary-button">GitHub Link</div>
@@ -101,15 +120,51 @@
                         </div>
                         <div class="right">
                             <div class="project-img">
-                                <img src="project.png" />
+                                <img src="assets/project1.png" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="inner-container">
-                        <div class="left">asd</div>
-                        <div class="right">asdsad</div>
+                        <div class="left">
+                            <h2 class="project-head">Project 2</h2>
+                            <div class="project-description">
+                                <p>Here goes the short description of the project and its goals and processes.</p>
+                                <p>We may also include the technologies used in the project here, like: <br>
+                                    technologies- <br> Frontend- Vue.js <br> Backend- Flask with SQAlchemy
+                                </p>
+                            </div>
+                            <div class="primary-button-wrapper">
+                                <div class="project-button primary-button">GitHub Link</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="project-img">
+                                <img src="assets/project2.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="inner-container">
+                        <div class="left">
+                            <h2 class="project-head">Project 3</h2>
+                            <div class="project-description">
+                                <p>Here goes the short description of the project and its goals and processes.</p>
+                                <p>We may also include the technologies used in the project here, like: <br>
+                                    technologies- <br> Frontend- Angular.js<br> Backend- Django with SQLite
+                                </p>
+                            </div>
+                            <div class="primary-button-wrapper">
+                                <div class="project-button primary-button">GitHub Link</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="project-img">
+                                <img src="assets/project3.png" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,21 +173,21 @@
                     <div class="inner-container">
                         <div class="left">
                             <h2>Say Hello!</h2>
-                            <p> Gotta discuss something with us or just wanna say hello, we're always up for a chat. </p>
+                            <p> Gotta discuss something with me or just wanna say hello, I'm always up for a chat. </p>
                         </div>
                         <div class="right">
                             <div class="share-buttons">
                                 <a href="" class="social-link gmail-link">
-                                    <img src="gmail.png" alt="Gmail">
+                                    <img src="assets/gmail.png" alt="Gmail">
                                 </a>
                                 <a href="" class="social-link">
-                                    <img src="linkedin.png" alt="linkedin"/>
+                                    <img src="assets/linkedin.png" alt="linkedin"/>
                                 </a>
                                 <a href="" class="social-link">
-                                    <img src="github.png" alt="GitHub">
+                                    <img src="assets/github.png" alt="GitHub">
                                 </a>
                                 <a href="" class="social-link">
-                                    <img src="twitter.png" alt="Twitter">
+                                    <img src="assets/twitter.png" alt="Twitter">
                                 </a>
                             </div>
                         </div>

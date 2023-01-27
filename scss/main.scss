@@ -1,10 +1,13 @@
 @use 'values';
 
+html{
+    font-size: 18px;
+}
 body {
     display: block;
     width: 100%;
     margin: 0;
-    font-family: Open Sans;
+    font-family: Montserrat;
 }
 h2 {
     font-family: Source Sans, sans-serif;
@@ -13,12 +16,12 @@ h2 {
 a {
     text-decoration: none;
     width: fit-content;
-    font-weight: bold;
 }
 .primary-button-wrapper{
     height: 63px;
     display: block;
     position: relative;
+    // font-weight: bold;
 }
 .primary-button {
     @include values.button;
@@ -27,9 +30,11 @@ a {
     display: flex;
     margin-top: auto;
     box-shadow: 0 0 20px -10px black;
-    transition: 0.3s;
+    transition: 0.2s;
     position: absolute;
     bottom: 0;
+    padding: 0 32px;
+    font-family: Source Sans, sans-serif;
     &:hover{
         transform: translateY(-3px);
     }
@@ -43,7 +48,7 @@ header {
     width: 100%;
     height: 0;
     position: relative;
-        
+
     .container{
         background-color: rgb(247, 247, 247);
         box-shadow: 0px -17px 17px 16px #8f8e8e;
@@ -61,6 +66,7 @@ header {
     }
     .head-title {
         order: 2;
+        font-size: 20px;
     }
     .head-menu {
         order: 3;
@@ -68,6 +74,7 @@ header {
     }
     ul {
         margin: 0;
+        padding-left: 10px;
         li {
             display: inline-block;
             list-style: none;
@@ -77,21 +84,21 @@ header {
 }
 .card {
     height: auto;
-    overflow: auto;
     background-color: white;
     overflow: auto;
 
     .container{
-        flex: 1;
         display: flex;
         flex-direction: column;
-        border-radius: 24px;
         justify-content: center;
         align-items: center;
-        padding: 10%;
-        height: 100vh;
+        padding: 0 10%;
+        margin: auto 0;
+        min-height: 100vh;
         box-sizing: border-box;
-        border-bottom: 1px dashed grey;
+        //border-bottom: 1px dashed grey;
+        box-shadow: 0 14px 24px -26px inset;
+        font-size: values.$font-mid;
 
         #home {
             text-align: center;
@@ -125,7 +132,7 @@ header {
 }
 .card_about{
     .left{
-        line-height: 32px;
+        line-height: 28px;
     }
 }
 .skill {
@@ -142,9 +149,9 @@ header {
         align-items: center;
     }
     .left{
-        flex-grow: 0.5!important;
+        flex-grow: 0.9!important;
         .project-description{
-            line-height: 24px;
+            line-height: 28px;
         }
     }
 
@@ -154,8 +161,14 @@ header {
         border-radius: values.$project-border-radius;
         padding: 5px 5px 30px 5px;
         box-shadow: 0 0 20px -10px;
-        background-color: #0093ff;
+        
     }
+    .container:nth-child(1) .project-img{ background-color: #0093ff }
+    .container:nth-child(2) .project-img{ background-color: #4caf50 }
+    .container:nth-child(3) .project-img{ background-color: #673ab7 }
+    .container:nth-child(4) .project-img{ background-color: #ff9800 } //added extra line for future use, maybe :)
+
+
     img{
         width: 100%;
         border-radius: values.$project-border-radius;
@@ -164,6 +177,7 @@ header {
 .card_hello{
     h2{
         font-size: 55px;
+        line-height: 60px;
         &::after{
             width: 50%!important;
             padding-top: 16px;
@@ -192,13 +206,64 @@ header {
     .gmail-link{
         &:hover{
             &::after{
-                content: "adarsh@email.com";
+                content: "example@email.com";
                 margin-top: 8px;
                 background: white;
                 padding: 2px;
                 color: #373737;
             }
         }
-        
+    }
+}
+.card_hero{
+    .inner-container{
+        align-items: center;
+    }
+    .description{
+        line-height: 28px;
+    }
+    .image-wrapper{
+        margin: 0 auto;
+        max-width: 300px;
+        box-sizing: border-box;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: 0.3s;
+        }
+    }
+    .right img:hover{
+        transform: rotate(-10deg);
+    }
+}
+@media screen and (max-width:700px) {
+    html{
+        font-size: 18px;
+    }
+    .card .container{
+        padding: 7% !important;
+    }
+    .card_hero{
+        padding-top: 60px !important;
+    }
+    .card_hero .image-wrapper{
+        width: 250px;
+        margin-top: -96px;
+    }
+    .card_hero .inner-container, .card_projects .inner-container{
+        flex-direction: column-reverse;
+        gap: 8px !important;
+    }
+    .card_about .inner-container, .card_hello .inner-container{
+        flex-direction: column;
+    }
+    .about-link{
+        display: none;
+    }
+    .social-link{
+        display: inline !important;
+        float: left;
+        padding: 0 12px;
     }
 }
