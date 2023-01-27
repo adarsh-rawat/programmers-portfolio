@@ -28,7 +28,7 @@ a {
 }
 
 .primary-button {
-  background-color: #fc6103;
+  background-color: #dc5d2a;
   border-radius: 24px;
   color: white;
   width: -webkit-fit-content;
@@ -38,6 +38,7 @@ a {
   align-items: center;
   padding: 0 16px;
   cursor: pointer;
+  font-family: Source Sans, sans-serif;
   font-size: 20px;
   height: 48px;
   display: flex;
@@ -54,7 +55,7 @@ a {
 }
 
 .simple-button {
-  background-color: #fc6103;
+  background-color: #dc5d2a;
   border-radius: 24px;
   color: white;
   width: -webkit-fit-content;
@@ -64,6 +65,7 @@ a {
   align-items: center;
   padding: 0 16px;
   cursor: pointer;
+  font-family: Source Sans, sans-serif;
   height: 32px;
   display: inline-flex;
 }
@@ -143,7 +145,7 @@ header ul li {
 }
 .card .container .left h2:after {
   content: "";
-  border-bottom: 4px solid #fc6103;
+  border-bottom: 4px solid #dc5d2a;
   width: 60px;
   display: block;
   margin-top: 4px;
